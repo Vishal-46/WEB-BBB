@@ -40,7 +40,6 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     margin: 10% auto;
     overflow: hidden;
-    height: 600px;
 }
 .card-header {
     display: flex;
@@ -90,7 +89,6 @@ body {
 .plan-price {
     color: gray;
 }
-
 .change-link {
     text-decoration: none;
     color: blue;
