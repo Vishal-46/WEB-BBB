@@ -1,3 +1,148 @@
-body{
-    background-image: url(./images/pattern-background-desktop.svg);
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family:Oswald;
+    text-align: center;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 100vh;
+}
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+.bg-top, .bg-bottom {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+.bg-top {
+    top: 0;
+    left: 0;
+}
+.bg-bottom {
+    bottom: 0;
+    right: 0;
+}
+.order-card {
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 10% auto;
+    overflow: hidden;
+    height: 600px;
+}
+.card-header {
+    display: flex;
+    justify-content: center;
+}
+.card-body h1 {
+    font-size: 22px;
+    font-weight: bold;
+}
+.card-body p {
+    font-size: 14px;
+    color: gray;
+    margin: 10px 0;
+}
+.card-header {
+    justify-content: center;
+    padding: 0; 
+    margin: 0;  
+}
+.card-header img {
+    display: block;
+    width: 100%;    
+    border-top-left-radius: 15px;  
+    border-top-right-radius: 15px; 
+}
+.plan-info {
+    display: flex;
+    align-items: center;
+    background: #f8f9fd;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+.plan-info img {
+    width: 40px;
+    font-family: Roboto ;
+}
+.plan-details {
+    flex: 1;
+    text-align: left;
+    padding-left: 10px;
+}
+.plan {
+    font-weight: bold;
+}
+.plan-price {
+    color: gray;
+}
+
+.change-link {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+.btn-pri {
+    background: #14206f;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-family: Oswald ;
+    
+}
+.btn-pri:hover {
+    background: #3b4bb3;
+}
+.btn-sec {
+    background: none;
+    color: rgb(7, 1, 1);
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn-sec:hover {
+    color: rgb(20, 7, 100);
+}
+.order-card {
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 10% auto;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+@media (max-width: 600px) {
+    .order-card {
+        width: 85%; 
+        padding: 20px; 
+        margin: 15% auto; 
+    }
+}
+@media (max-width: 600px) {
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+    }
 }
